@@ -1,0 +1,6 @@
+db.sqlite3
+.tmuxp.json
+node_modules/
+bower_components
+*.pyc
+local_settings.py

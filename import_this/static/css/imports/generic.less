@@ -1,0 +1,40 @@
+@import 'header/init';
+@import 'definitions';
+
+#menu-toggle {
+	display: none;
+
+	&:checked ~ .body-wrapper {
+		left: 20%;
+
+		label.menu-toggle {
+			background: @red;
+
+			&:hover {
+				background: @green;
+			}
+		}
+	}
+}
+
+#menu {
+	position: absolute;
+	left: -20%;
+	width: 20%;
+	background: @blue;
+	top: 0;
+	bottom: 0;
+}
+
+.body-wrapper {
+	position: relative;
+	left: 0;
+
+	transition: left 0.5s;
+	-webkit-transition: left 0.5s;
+}
+
+#main {
+	min-height: 200px;
+
+}

@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+	<title>{% block page_title %} {% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/screen.css" %}">
+	<link rel="shortcut icon" href="{% static "images/favicon.ico" %}" />
+	<meta property="og:site_name" content="import this">
+	<meta property="og:title" content="import this"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+	<input type="checkbox" id="menu-toggle">
+	<div class="body-wrapper">
+		<div id="menu"></div>
+		<header class="navbar" role="navigation">
+		<label for="menu-toggle" class="menu-toggle"></label>
+		<div class="container">
+			<div class="navbar-header">
+				  <a class="navbar-brand" href="#">import this</a>
+			</div>
+		</div>
+		    </header>
+		<section id="main" class="{% block main_class %}{% endblock %}">
+			{% block content %}
+			{% endblock %}
+		</section>
+		<footer>
+		</footer>
+	</div>
+	<script src="{% static "js/script.js" %}" data-main="{% static "js/main.js" %}"></script>
+</body>
+</html>

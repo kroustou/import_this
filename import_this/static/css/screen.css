@@ -6204,6 +6204,9 @@ header.navbar {
 #menu-toggle:checked ~ .body-wrapper header label.menu-toggle:hover {
   background: #028f76;
 }
+body {
+  overflow-x: hidden;
+}
 #menu-toggle {
   display: none;
 }
@@ -6232,4 +6235,12 @@ header.navbar {
 }
 #main {
   min-height: 200px;
+}
+h3 {
+  text-align: center;
+}
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
 }

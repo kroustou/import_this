@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "2.0.3",
     "requirejs": "2.1.8",
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.2.0",
+    "flatui": "*"
   }
 }

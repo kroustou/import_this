@@ -4,3 +4,4 @@ node_modules/
 bower_components
 *.pyc
 local_settings.py
+public
